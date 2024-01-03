@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+ 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- ESTILOS NAVBAR -->
+   <link rel="stylesheet" type="text/css" href="css/navbar.css">
+   <!-- ESTILOS PROYECTOS -->
+  <link rel="stylesheet" type="text/css" href="css/proyectos.css">
+  <link rel="icon" href="images/icon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+  <title>Ariel Fernández: Full Stack Web Developer in PHP</title>
+</head>
+
+    <body>
+       <header class="site-header">
+                <div class="menu-icon">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+              </div>
+            
+            <nav class="nav">
+
+              <ul class="navlist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="proyectos.html">Projects</a></li>
+                <li><a href="contacto.html">About me</a></li>
+              </ul>
+
+            </nav>
+        </header>
+
+  <section class="seccion-proyectos">
+           
+    <div class="rectangulo-negro">
+        <div class="proyecto-clasico">
+            <h2><a href="pages/clasicos.html">Clásico de La Plata</a></h2>
+           
+            <p>Esta plataforma de análisis de encuentros históricos entre Estudiantes y Gimnasia ofrece a los seguidores del fútbol la posibilidad de explorar detalladamente la rica historia de enfrentamientos entre estos equipos. Con funciones de filtrado intuitivas, los usuarios pueden investigar y examinar partidos pasados por fecha, tipo de torneo, equipos involucrados y estadios, brindando una experiencia interactiva para revivir la emocionante rivalidad entre Gimnasia y Estudiantes.</p>
+           <div class="container-buttons">
+            <button onclick="translateText('clasico', 'english')">ENG</button>
+            <button onclick="translateText('clasico', 'german')">DEU</button>
+          </div>
+        </div>
+    </div>
+    
+    <div class="rectangulo-negro">
+        <div class="proyecto-diego">
+            <h2><a href="pages/frasesdeldiego.html">Frases del D1eg0</a></h2>
+            <p>El proyecto se centra en mostrar citas aleatorias de Diego Armando Maradona en una página web. Se ha implementado una función en JavaScript que selecciona al azar una de las frases célebres del legendario futbolista argentino y la muestra dinámicamente en un elemento HTML. Estas frases representan expresiones icónicas y memorables del legado de Diego.</p>
+            <div class="container-buttons">
+            <button onclick="translateText('diego', 'english')">ENG</button>
+            <button onclick="translateText('diego', 'german')">DEU</button>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="rectangulo-negro">
+     
+        <div class="proyecto-moviez">
+            <h2><a href="pages/moviez.html">Moviez</a></h2>
+            
+            <p>Este proyecto, originalmente parte de ARGENTINA PROGRAMA, se ha personalizado con mejoras y extensiones. Diseñado con JavaScript, Bootstrap y CSS, utiliza la API de The Movie Database (TMDb) como su fuente principal de datos sobre películas. Permite a los usuarios explorar películas populares, las mejor valoradas y los próximos estrenos, así como buscar películas por director o actor. Al seleccionar una película, muestra un modal con detalles esenciales como título, descripción, calificación y año de estreno. Esta interfaz simplificada está orientada a facilitar la exploración y acceso a información relevante sobre películas mediante la integración de la API de TMDb."</p>
+            <div class="container-buttons">
+            <button onclick="translateText('moviez', 'english')">ENG</button>
+            <button onclick="translateText('moviez', 'german')">DEU</button>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="cuadrado-negro" id="codigoPHP">
+        <!-- Contenido generado dinámicamente -->
+    </div>
+
+
+
+ </section>
+
+
+
+  
+      <script src="js/navbar.js"></script>
+      <script src="js/script.js"></script>
+      <script src="js/proyectos.js"></script>
+
+</body>
+
+</html>

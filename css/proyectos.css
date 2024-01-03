@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  font-family: 'Alfa Slab One', serif;
+}
+body {
+  background-color: #ffffff;
+  height: 100vh;
+}
+.rectangulo-negro {
+  margin: 0 auto;
+  margin-top: 100px;
+  height: auto;
+  border: 15px solid #000000;
+  width: 80vw;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  }
+
+  h2 {
+    text-align: center;
+  }
+h2 a {
+  color: #000000;
+  font-weight: 100;
+  font-family: 'Alfa Slab One', serif;
+  font-size: 65px;
+  text-decoration: none;
+  text-align: center;
+}
+button {
+  border: none;
+  cursor: pointer;
+  font-family: 'Alfa Slab One', serif;
+  padding: 10px;
+  border: 5px solid rgb(0, 0, 0);
+  color: #000000;
+  background-color: white;
+  border: 5px solid black;
+  margin: 5px;
+}
+ button:hover {
+  color: white;
+  background-color: #000000;
+  border: 5px solid white;
+}
+.email-button {
+  margin-top: 10px;
+}
+
+.container-buttons {
+background-color: #000000;
+display: flex;
+margin-top: 10px;
+justify-content: center;
+
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+p {
+  text-align: center;
+}
+
+h2 a:hover {
+  font-size: 75px;
+}
+.cuadrado-negro {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Alfa Slab One', serif;
+  font-size: 175px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+  user-select: none;
+}
+
+@keyframes mostrarCodigo {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .rectangulo-negro {
+  margin: 0 auto;
+  height: 44vh;
+  margin-top: 25px;
+  border: 15px solid #000000;
+  width: 60%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.proyecto p {
+  color: #000000; /* Color del texto descriptivo */
+  text-align: center;
+}
+.cuadrado-negro {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Alfa Slab One', serif;
+  font-size: 150px;
+  overflow: hidden;
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  z-index: -1; 
+  pointer-events: none; 
+  user-select: none; 
+}
+
+@keyframes mostrarCodigo {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+}

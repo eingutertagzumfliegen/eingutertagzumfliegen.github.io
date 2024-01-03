@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  font-family: 'Big Shoulders Text', cursive;
+  font-weight: 900;
+}
+
+body {
+  background-color: #dddddd;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #141329;
+  height: 80px;
+  width: 95vw;
+  margin: 15px auto 0;
+  border-radius: 15px;
+  border: 3px solid #ffefe3;
+  position: fixed;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffefe3;
+  padding: 15px;
+  text-align: center;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #ffefe3;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.contenedor-principal {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.233);
+  background-color: white;
+  width: 80vw;
+  border-radius: 15px;
+  margin-top: 125px;
+  padding: 10px;
+}
+
+.contenedor-selectores {
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 15px;
+  padding: 17px;
+  border-radius: 10px; 
+}
+
+.contenedor-resultado-busqueda {
+  margin: 0 auto;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 25px;
+  width: 80vw;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.233);
+  border-radius: 15px;
+ 
+}
+.resultados-container {
+  background-color: transparent;
+}
+
+.columna-selectores select,
+.columna-selectores button,
+.columna-gimnasia img,
+.columna-estudiantes img,
+.columna-empates img {
+  width: 100%;
+  max-width: 80px;
+  height: auto;
+  text-align: center;
+  
+}
+
+.selectores select,
+.selectores button {
+  padding: 8px;
+  border-radius: 5px;
+}
+
+#res-hist-empates,
+#res-hist-jugados,
+#res-hist-gimnasia,
+#res-hist-empates,
+#res-hist-estudiantes {
+  font-size: 105px;
+  font-weight: 900;
+  color: #141329;
+}
+
+select {
+  background-color: #141329;
+  color: #ffefe3;
+  padding: 6px;
+  border-radius: 3px;
+  margin: 1px;
+  text-align: center;
+  font-size: 20px;
+}
+
+select .historial-principal {
+  background-color: transparent;
+}
+
+.gelp200:hover,
+.edlp200:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.contenedor-principal {
+  display: flex;
+  flex-direction: column;
+  width: 95vw;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.contenedor-clasicos {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  color: #141329;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  width: 10vw;
+}
+
+
+
+.con-prin-fila-1 {
+  font-size: 22px;
+  font-weight: 900;
+  text-align: center;
+  font-size: 26px;
+}
+
+
+.con-prin-fila-2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4e4e4e;
+}
+
+
+.con-prin-fila-2-column1,
+.con-prin-fila-2-column2,
+.con-prin-fila-2-column3,
+.con-prin-fila-2-column4 {
+  text-align: center;
+
+}
+
+
+.con-prin-fila-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+
+}
+
+.con-prin-fila-3-column-2,
+.con-prin-fila-3-column-3 {
+  font-size: 55px;
+  margin-right: 5px;
+  font-weight: 600;
+  width: 50px;
+  background-color: #141329;
+  text-align: center;
+  color: #ffefe3;
+}
+
+.con-prin-fila-4 {
+  padding: 10px;
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 12px;
+  text-align: center;
+}
+
+p {
+  font-weight: 200;
+  line-height: 1px;
+}
+
+#res-hist-jugados,
+.partidos-jugados {
+  font-size: 55px;
+  font-weight: 900;
+  text-align: center;
+}
+
+
+
+option {
+  text-align: center;
+}
+
+.contenedor-historial {
+  display: flex;
+  width: 95vw;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+
+.columna-gimnasia,
+.columna-estudiantes,
+.columna-empates {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 22px;
+  font-size: 900;
+  border-radius: 15px;
+  margin: 2px;
+  color: #141329;
+  width: 33.33%;
+
+}
+
+.gelp200,
+.edlp200 {
+  width: 15px;
+  margin: 0 auto;
+}
+
+#res-hist-gimnasia,
+#res-hist-empates,
+#res-hist-estudiantes {
+  font-size: 85px;
+}
+
+.contenedor-botones {
+  display: flex;
+  width: 100%;
+}
+
+
+
+button {
+  background-color: #141329;
+  border: none;
+  color: #ffefe3;
+  width: 50%;
+  padding: 10px;
+  border-radius: 3px;
+  margin: 1px;
+  font-size: 20px;
+
+}
+
+button:hover {
+  background-color: #ffefe3;
+  color: #141329;
+}
+
+.historial-principal {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.columna-1,
+.columna-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#resultado {
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+
+
+
+
+
+
+/*-------1200px------*/
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 35px;
+  }
+
+  .gelp200,
+  .edlp200 {
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  .contenedor-principal {
+    flex-direction: row;
+    width: 65vw;    
+    margin-top: 125px;  
+  }
+
+  .contenedor-selectores {
+    width: 25%;
+    margin: 0 auto;
+    margin-top: 25px;
+   }
+
+  .contenedor-resultado-busqueda {
+    width: 65vw;
+  }
+
+  .columna-selectores,
+  .columna-gimnasia,
+  .columna-estudiantes,
+  .columna-empates {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    font-size: 900;
+
+
+  }
+
+  select {
+    background-color: #141329;
+    color: #ffefe3;
+    padding: 6px;
+    border-radius: 3px;
+    margin: 1px;
+    font-size: 18px;
+  }
+
+  .columna-selectores select,
+  .columna-selectores button,
+  .columna-gimnasia img,
+  .columna-estudiantes img,
+  .columna-empates img {
+    width: 100%;
+    max-width: 175px;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .selectores select,
+  .selectores button {
+    padding: 8px;
+    border-radius: 5px;
+  }
+
+  .con-prin-fila-2 {
+    flex-direction: row;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  #res-hist-empates,
+  #res-hist-jugados,
+  #res-hist-gimnasia,
+  #res-hist-empates,
+  #res-hist-estudiantes {
+    font-size: 105px;
+    font-weight: 900;
+    color: #141329;
+  }
+
+  .columna-empates {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .contenido-empates {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+}

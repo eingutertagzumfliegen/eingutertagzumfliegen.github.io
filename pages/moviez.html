@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/moviez.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;500;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="2991552.png" type="2991552.png">
+
+  <title>MOVIEZ</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <div class="logo"><a href="../proyectos.html">MOVIEZ</a></div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <button class="nav-link" id="button-popular">Populares</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" id="button-top-rated">Mejor rankeadas</button>
+          </li>
+
+          <li class="nav-item">
+            <button class="nav-link" id="button-proximos-estrenos">Próximos estrenos</button>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Ingresá director, película, actor, actriz..." aria-label="Buscar">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+<section class="seccion-destacadas">
+  <!--Películas destacadas-->
+  <div id="peliculas-destacadas-contenedor" class="container">
+    <h2 id="peliculas-destacadas-titulo">Películas destacadas</h2>
+    <div class="row" id="peliculas-destacadas"></div>
+  <div>
+    </section>
+ <!--- OTRAS PELICULAS-->
+  <section class="seccion-otras-peliculas">
+     
+      <div class="container">
+          <div class="row" id="peliculas">
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal" tabindex="-1" id="pelicula-modal">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg-down modal-lg">
+          <div class="modal-content">
+            <div class="modal-body" id="modal-body">
+              <!--Modal Body Spinner-->
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+      <script src="../js/moviez.js"></script>
+</body>
+
+</html>

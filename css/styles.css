@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  font-family: 'Alfa Slab One', serif;
+}
+
+body {
+  height: 100vh;
+}
+.rectangulo-negro {
+  margin: 0 auto;
+  margin-top: 250px;
+  height: auto;
+  border: 10px solid #000000;
+  width: 85vw;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-nombre {
+  margin: 0 auto;
+  font-family: 'Alfa Slab One', serif;
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+.fullstack {
+  color: #ffffff;
+  font-family: 'Alfa Slab One', serif;
+  font-size: 20px;
+  background-color: #000000;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+   text-transform: uppercase;
+   width: 100%;
+  
+}
+
+.cuadrado-negro {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Alfa Slab One', serif;
+  font-size: 125px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+  user-select: none;
+}
+
+@keyframes mostrarCodigo {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+@media screen and (min-width: 1200px) {
+
+  .rectangulo-negro {
+    margin: 0 auto;
+    margin-top: 250px;
+    height: 22vh;
+    border: 10px solid #000000;
+    width: 35vw;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenedor-nombre {
+
+   font-size: 40px;
+
+  }
+
+  .fullstack {
+    color: #ffffff;
+    font-size: 20px;
+    height: 10vh;
+    display: flex;
+   
+  }
+
+  .cuadrado-negro {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Alfa Slab One', serif;
+    font-size: 150px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+    user-select: none;
+    
+  }
+
+  @keyframes mostrarCodigo {
+    0% {
+      transform: translateY(-100%);
+    }
+
+    100% {
+      transform: translateY(0%);
+    }
+  }

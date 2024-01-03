@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clásico de La Plata</title>
+  <!-- Icon link -->
+  <link rel="icon" type="image/png" href="#">
+
+  <!-- Custom CSS link -->
+  <link rel="stylesheet" type="text/css" href="../css/clasicos.css">
+
+  <!-- Boxicons link -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <!-- Remixicon link -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <!-- Google Fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100;500;700;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="encabezado">
+    <div class="logo"><a href="../proyectos.html" clásico de La Plata>El clásico de La PLata</a></div>
+    <div class="menu-icon">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </header>
+
+  <div class="contenedor-principal">
+    <div class="contenedor-selectores">
+      <select id="id">
+        <option value="" disabled selected>CLÁSICO Nº</option>
+        <option value="">Todos</option>
+      </select>
+
+      <select id="day">
+        <option value="" disabled selected>DÍA</option>
+        <option value="">Todos</option>
+      </select>
+
+      <select id="month">
+        <option value="" disabled selected>MES</option>
+        <option value="">Todos</option>
+        <option value="Enero">Enero</option>
+        <option value="Febrero">Febrero</option>
+        <option value="Marzo">Marzo</option>
+        <option value="Abril">Abril</option>
+        <option value="Mayo">Mayo</option>
+        <option value="Junio">Junio</option>
+        <option value="Julio">Julio</option>
+        <option value="Agosto">Agosto</option>
+        <option value="Septiembre">Septiembre</option>
+        <option value="Octubre">Octubre</option>
+        <option value="Noviembre">Noviembre</option>
+        <option value="Diciembre">Diciembre</option>
+      </select>
+
+      <select id="year">
+        <option value="" disabled selected>AÑO</option>
+        <option value="">TODOS</option>
+      </select>
+
+      <select id="tipoTorneo">
+        <option value="" disabled selected>TORNEO</option>
+        <option value="">Todos</option>
+        <option value="Primera División">Primera División</option>
+        <option value="Copas Nacionales">Copas Nacionales</option>
+        <option value="Copas Internacionales">Copas Internacionales</option>
+      </select>
+
+      <select id="matchDay">
+        <option value="" disabled selected>FECHA Nº</option>
+        <option value="">Todas</option>
+      </select>
+
+
+      <select id="teamHome">
+        <option value="" disabled selected>LOCAL</option>
+        <option value="">Todos</option>
+        <option value="Estudiantes">Estudiantes</option>
+        <option value="Gimnasia">Gimnasia</option>
+      </select>
+
+      <select id="teamAway">
+        <option value="" disabled selected>VISITANTE</option>
+        <option value="">Todos</option>
+        <option value="Gimnasia">Gimnasia</option>
+        <option value="Estudiantes">Estudiantes</option>
+      </select>
+
+      <select id="score">
+        <option value="" disabled selected>RESULTADO</option>
+        <option value="">Todos</option>
+        <option value="Suspendido">Suspendido</option>
+        <option value="0-0">0-0</option>
+        <option value="1-0">1-0</option>
+        <option value="1-1">1-1</option>
+        <option value="2-0">2-0</option>
+        <option value="2-1">2-1</option>
+        <option value="2-2">2-2</option>
+        <option value="3-0">3-0</option>
+        <option value="3-1">3-1</option>
+        <option value="3-2">3-2</option>
+        <option value="3-3">3-3</option>
+        <option value="4-1">4-1</option>
+        <option value="4-2">4-2</option>
+        <option value="4-4">4-4</option>
+        <option value="5-1">5-1</option>
+        <option value="5-2">5-2</option>
+        <option value="6-1">6-1</option>
+        <option value="7-0">7-0</option>
+        <option value="*-*">Otros</option>
+      </select>
+
+      <select id="stadium">
+        <option value="" disabled selected>ESTADIO</option>
+        <option value="">Todos</option>
+        <option value="Jorge Luis Hirschi">Jorge Luis Hirschi</option>
+        <option value="Juan Carmelo Zerillo">Juan Carmelo Zerillo</option>
+        <option value="Ciudad de La Plata">Ciudad de La Plata</option>
+        <option value="Quilmes">Quilmes</option>
+        <option value="Lanús">Lanús</option>
+        <option value="Racing">Racing</option>
+        <option value="San Lorenzo">San Lorenzo</option>
+      </select>
+
+      <select id="ganador">
+        <option value="" disabled selected>GANADOR</option>
+        <option value="">TODOS</option>
+        <option value="Gimnasia">Gimnasia</option>
+        <option value="Estudiantes">Estudiantes</option>
+      </select>
+      <div class="contenedor-botones">
+        <button class="search-btn" onclick="filtrar()"><i class="ri-search-eye-line"></i></button>
+        <button class="clean-btn" onclick="limpiar()"><i class="ri-delete-bin-6-line"></i></button>
+      </div>
+    </div>
+
+
+    <div class="contenedor-historial">
+      <div class="columna-gimnasia">
+        <div><img class="gelp200" src="../images/gimnasia.png" alt="escudo_gimnasia"></div>
+        <div id="res-hist-gimnasia"></div>
+        <div id="res-goles-gimnasia"></div>
+      </div>
+
+      <div class="columna-empates">
+        <div class="contenido-empates">
+          <div id="res-hist-empates"></div>
+          <div>EMPATES</div>
+
+          <div id="res-goles-empate"></div>
+
+          <div id="res-hist-jugados"></div>
+          <div>PARTIDOS JUGADOS</div>
+        </div>
+      </div>
+
+      <div class="columna-estudiantes">
+        <div><img class="edlp200" src="../images/edlp.png" alt="escudo_estudiantes"></div>
+        <div id="res-hist-estudiantes"></div>
+        <div id="res-goles-estudiantes"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <div>
+    <div id="resultado"> </div>
+  </div>
+
+  <script src="../js/clasicos.js"></script>
+</body>
+
+</html>
